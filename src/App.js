@@ -1,5 +1,5 @@
 import Expenses from "./components/Expenses/Expenses";
-import NewExpense from "./components/Expenses/NewExpense";
+import NewExpense from "./components/NewExpense/NewExpense";
 const App = () => {
     const expenseDate = new Date(2022,9,16);
     const expenseTitle = 'Car Insurance'
