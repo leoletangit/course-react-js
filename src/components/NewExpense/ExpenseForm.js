@@ -38,13 +38,13 @@ const ExpenseForm = (props) => {
         event.preventDefault();
         const data = {
             title: userInput.title,
-            amount: userInput.amount,
+            amount: +userInput.amount,
             date: new Date(userInput.date)
         };
         props.onSaveExpensaData(data);
         setUserInput({
             title: '',
-            amount:'',
+            amount: 0,
             date:''
         });
         props.toggleNewExpenseControlHandler();
